@@ -1,0 +1,7 @@
+CONCLUSIONS OF INITIALIZATION ORDER TEST:
+
+1. objects are created from the beginning of inheritance: parent -> child -> grandchild (initialized object) - each constructor are ran.
+2. primitive types are initialized in a class with the object, but object fields are null if not initialized.
+3. if toString() is overrode in all classes in chain of inheritance, only the last implementation will appear, but it'll be repeated for all classes in the chain.
+Additionally last class' fields will be initialized with their proper values only in last initialization,
+but previous' classes' fields are initialized in the background and accessible through "super" keyword.
